@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import DishDetailComponent from './DishDetailComponent'
 
 class Menu extends Component {
   constructor(props) {
@@ -21,13 +22,7 @@ class Menu extends Component {
   renderSelectedDish(dish) {
     if (dish != null) {
       return (
-        <Card>
-          <CardImg width="100%" src={dish.image}></CardImg>
-          <CardBody>
-            <CardTitle>{dish.name}</CardTitle>
-            <CardText>{dish.description}</CardText>
-          </CardBody>
-        </Card>
+        <DishDetailComponent dish={dish} />
       );
     }
     else {
@@ -40,7 +35,7 @@ class Menu extends Component {
   render() {
     const menu = this.props.dishes.map((dish) => {
       return (
-        <div key={dish.id} className="col-12 col-md-5 m-1">
+        <div key={dish.id} className="col-12 col-md-5 mt-5">
           <Card onClick={() => this.onDishSelect(dish)}>
             <CardImg width="100%" src={dish.image} alt={dish.name} />
             <CardImgOverlay className="ml-5">
@@ -52,23 +47,13 @@ class Menu extends Component {
     });
 
     return (
-      <div class="container">
-        <div class="row">
-          <div className="col-12 col-md-9">
-            <div className="container">
-              <div className="row">
-                {menu}
-              </div>
-            </div>           
-          </div>
-          <div className="col-12 col-md-3">
-            <div className="container">
-              <div className="row">
-                <div className="col-12 mt-5">
-                  {this.renderSelectedDish(this.state.selectedDish)}
-                </div>
-              </div>
-            </div>
+      <div className="container">
+        <div className="row">        
+            {menu}         
+        </div>
+        <div className="row">
+          <div className="col-12 mt-5">
+            {this.renderSelectedDish(this.state.selectedDish)}
           </div>
         </div>
       </div>
