@@ -10,6 +10,7 @@ import Contact from './ContactUsComponent'
 import { COMMENTS } from '../shared/comments';
 import { PROMOTIONS } from '../shared/promotions';
 import { LEADERS } from '../shared/leaders';
+import AboutUs from './AboutUsComponents';
 
 class Main extends Component {
 
@@ -55,6 +56,7 @@ class Main extends Component {
                     <Route exact path="/menu" component={()=><Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} /> }></Route>                    
                     <Route path='/menu/:dishId' component={DishWithId} />
                     <Route path="/contactus" component={Contact}></Route>
+                    <Route path="/aboutus" component={()=><AboutUs leaders={this.state.leaders}></AboutUs>}></Route>
                     <Redirect to="/home"></Redirect>
                 </Switch>                                     
                 <Footer/>

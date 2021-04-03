@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardText,Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import {Link} from 'react-router-dom';
-
+import { Card, CardImg, CardBody, CardTitle, CardText, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 function RenderComments({ comments }) {
@@ -10,8 +9,8 @@ function RenderComments({ comments }) {
         comments.map(comment => {
             return (
                 <li key={comment.id}>
-                    <h3>{comment.author}</h3>
                     <p>{comment.comment}</p>
+                    <p>--{comment.author},{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
                 </li>
             );
         })
@@ -38,7 +37,7 @@ function DishDetailComponent(props) {
                     <div className="col-12">
                         <h3>{props.dish.name}</h3>
                         <hr />
-                    </div>                
+                    </div>
                 </div>
                 <div className="row">
                     <div className="col-12 col-md-6 mb-4">
@@ -59,7 +58,7 @@ function DishDetailComponent(props) {
                 </div>
 
             </div>)
-        }
+    }
 }
 
 export default DishDetailComponent;
