@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sundayoffice/static/css/main.3deaa18a.chunk.css",
+    "main.js": "/sundayoffice/static/js/main.67777e82.chunk.js",
+    "main.js.map": "/sundayoffice/static/js/main.67777e82.chunk.js.map",
+    "runtime-main.js": "/sundayoffice/static/js/runtime-main.6f97fc87.js",
+    "runtime-main.js.map": "/sundayoffice/static/js/runtime-main.6f97fc87.js.map",
+    "static/css/2.01d2c279.chunk.css": "/sundayoffice/static/css/2.01d2c279.chunk.css",
+    "static/js/2.5ae8c2de.chunk.js": "/sundayoffice/static/js/2.5ae8c2de.chunk.js",
+    "static/js/2.5ae8c2de.chunk.js.map": "/sundayoffice/static/js/2.5ae8c2de.chunk.js.map",
+    "static/js/3.83ddf0dd.chunk.js": "/sundayoffice/static/js/3.83ddf0dd.chunk.js",
+    "static/js/3.83ddf0dd.chunk.js.map": "/sundayoffice/static/js/3.83ddf0dd.chunk.js.map",
+    "index.html": "/sundayoffice/index.html",
+    "static/css/2.01d2c279.chunk.css.map": "/sundayoffice/static/css/2.01d2c279.chunk.css.map",
+    "static/css/main.3deaa18a.chunk.css.map": "/sundayoffice/static/css/main.3deaa18a.chunk.css.map",
+    "static/js/2.5ae8c2de.chunk.js.LICENSE.txt": "/sundayoffice/static/js/2.5ae8c2de.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/sundayoffice/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f97fc87.js",
+    "static/css/2.01d2c279.chunk.css",
+    "static/js/2.5ae8c2de.chunk.js",
+    "static/css/main.3deaa18a.chunk.css",
+    "static/js/main.67777e82.chunk.js"
+  ]
+}
